@@ -16,31 +16,24 @@
         }
     </style>
 <py-script> 
-
 import datetime
     
 x = datetime.datetime.now()
     
 </py-script>
-
     <body>
         <center><h1>SHOW TIME <py-script> print(x)</py-script></h1>
         <p>Hello!!!!!!!!!!!!!!!!!</p>
     <h1>Plotting a histogram of Standard Normal distribution</h1>
-    <div id="plot"></div></center> 
+    <div id="plot"></div></center>
     <py-script output="plot">
 import matplotlib.pyplot as plt
 import numpy as np
-
 np.random.seed(42)
-
 rv = np.random.standard_normal(1000)
-
 fig, ax = plt.subplots()
 ax.hist(rv, bins=30)
 fig
-
     </py-script>
     </body>
 </html>
-
